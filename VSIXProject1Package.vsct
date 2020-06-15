@@ -43,7 +43,7 @@
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
       </Group>
 		<Group guid="guidCmdSet" id="grpIdMenuProjectItem" priority="0x0700">
-			<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" />
+			<!--Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" /-->
 		</Group>
 		<Group guid="guidCmdSet" id="sampleMenuGroup" priority="0x1000">
 			<Parent guid="guidCmdSet" id="sampleMenu"/>
@@ -102,6 +102,18 @@
     </Bitmaps>
   </Commands>
 
+	<CommandPlacements>
+    <CommandPlacement guid="guidCmdSet" id="grpIdMenuProjectItem" priority="0xF00">
+			<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" />
+    </CommandPlacement>
+    <CommandPlacement guid="guidCmdSet" id="grpIdMenuProjectItem" priority="0xF00">
+			<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+    </CommandPlacement>
+    <CommandPlacement guid="guidCmdSet" id="grpIdMenuProjectItem" priority="0xF00">
+			<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE" />
+    </CommandPlacement>
+</CommandPlacements>
+		
   <Symbols>
     <!-- This is the package guid. -->
     <GuidSymbol name="guidVSIXProject1Package" value="{6005a4a4-dd55-4211-9626-c411f3287d52}" />
