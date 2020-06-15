@@ -102,7 +102,7 @@
     </Bitmaps>
   </Commands>
 
-	<CommandPlacements>
+<CommandPlacements>
     <CommandPlacement guid="guidCmdSet" id="grpIdMenuProjectItem" priority="0xF00">
 			<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" />
     </CommandPlacement>
